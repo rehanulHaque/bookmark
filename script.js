@@ -41,7 +41,7 @@ function displayBook(){
     }
     let str = ''
     bookObj.forEach((e, i) => {
-        str += `<li id="li-list" data-index="${i}"><a href="https://${e.link}" class="a-link" target="_blank">${e.name}</a> <button class="closeBtn" onclick="deleteItem(this.parentElement.dataset.index)">x</button></li>`
+        str += `<li id="li-list" data-index="${i}"><a href="${e.link}" class="a-link" target="_blank">${e.name}</a> <button class="closeBtn" onclick="deleteItem(this.parentElement.dataset.index)">x</button></li>`
     });
     if(bookObj.length != 0){
         ul.innerHTML += str
